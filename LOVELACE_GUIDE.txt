@@ -48,6 +48,10 @@ STEP# 5: Adding Platform:
 - cordova platform add android
 - cordova platform add ios
 
+or
+
+Just extract the zip files both node_modules.zip and platforms.zip directly.
+
 
 STEP# 6: Building your app
 -------------------------------------
