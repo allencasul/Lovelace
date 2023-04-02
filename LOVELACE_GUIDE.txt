@@ -1,0 +1,172 @@
+https://cordova.apache.org (Apache Cordova)
+
+
+
+STEP# 1: Make sure to have all of these installed on your machine.
+-------------------------------------
+1. https://nodejs.org/en/
+2. https://git-scm.com/downloads
+3. https://www.oracle.com/ph/java/technologies/javase/javase8-archive-downloads.html
+4. https://developer.android.com/studio
+5. https://gradle.org/
+5. Configure Environment Variables
+   Watch the installation process bit.ly/3JX1aXa
+
+
+
+STEP# 2: Apache Cordova Framework Installation via NPM
+-------------------------------------
+- npm install -g cordova
+
+
+
+STEP# 3: Creating a Project
+-------------------------------------
+- cordova create Facebook com.facebook.katana Facebook 
+
+  (Replace facebook with your own App Name, 
+  and for the katana term that refers to your own system-level codename, 
+  put your own code/company name.)
+
+
+
+STEP# 4: Check if cordova requirements successfully installed by running the command below:
+-------------------------------------
+- cordova requirements android --verbose (Run this command inside the Lovelace folder)
+
+(You should be seeing a message something like this)
+
+Java JDK: installed 1.8.0
+Android SDK: installed true
+Android target: installed android-33,android-31,android-30,android-29
+Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
+
+
+
+STEP# 5: Building your app
+-------------------------------------
+cordova run, build or emulate
+
+- cordova build android (For Android)
+- cordova build ios (For IOS)
+
+
+
+Platform:
+-------------------------------------
+- cordova platform add android
+- cordova platform add ios
+
+
+
+Plugins:
+-------------------------------------
+cordova plugin add plugin name (Adding a specific plugin)
+cordova plugin remove plugin name (Removing a specific plugin)
+
+cordova plugin add cordova-plugin-statusbar
+cordova plugin add cordova-plugin-splashscreen
+cordova plugin add cordova-plugin-whitelist
+cordova plugin add cordova-plugin-dialogs
+cordova plugin add cordova-plugin-inappbrowser
+cordova plugin add cordova-plugin-network-information
+cordova plugin add cordova-plugin-x-socialsharing
+
+
+
+App Icon Resizer
+-------------------------------------
+https://appiconmaker.co
+
+
+
+Splash Screen
+-------------------------------------
+Image Sizing Table
+size	   portrait	landscape
+ldpi	   200x320	320x200
+mdpi	   320x480	480x320
+hdpi	   480x800	800x480
+xhdpi	   720x1280	1280x720
+xxhdpi	   960x1600	1600x960
+xxxhdpi	   1280x1920	1920x1280
+
+    <!-- Default -->
+    <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
+    <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
+    <splash src="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
+    <splash src="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
+
+    <!-- Landscape -->
+    <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi" />
+    <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi" />
+    <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi" />    
+    <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi" />
+    <splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi" />
+    <splash src="res/screen/android/splash-land-xxxhdpi.png" density="land-xxxhdpi" />
+
+    <!-- Portrait -->
+    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi" />
+    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi" />
+    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi" />
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi" />
+    <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi" />
+    <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi" />
+
+
+
+Website to Mobile App
+-------------------------------------
+var app = {
+    // Application Constructor
+    initialize: function () {
+        document.addEventListener('deviceready',
+            this.onDeviceReady.bind(this), false);
+    },
+    // deviceready Event Handler
+    onDeviceReady: function () {
+        this.receivedEvent('deviceready');
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function (id) {
+        if (navigator.connection.type == Connection.NONE) {
+            navigator.notification.alert('Oops!, active internet connection is required. Please try again.');
+        }
+        else {
+            redirectTo("https://yourwebsite.com");
+        }
+    }
+};
+app.initialize();
+
+
+
+Allowing http request:
+-------------------------------------
+
+1. Add android:networkSecurityConfig="@xml/network_security_config" & android:usesCleartextTraffic="true" inside AndroidManifest.xml file.
+Ex. <application 
+	android:networkSecurityConfig="@xml/network_security_config" 
+	android:usesCleartextTraffic="true">
+    </application>
+
+2. Go to res/xml/ directory and create a file network_security_config.xml 
+3. Inside network_security_config.xml put this code:
+
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+
+
+
+-----------------------------------------------------------------------------
+https://cordova.apache.org/docs/en/dev/guide/appdev/allowlist/
+
+

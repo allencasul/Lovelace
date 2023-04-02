@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#000000"/>
+  <meta name="description" content="Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Rizal CSS Framework for the UI."/>
+  <meta name="keywords" content="Lovelace, Rizal CSS Framework, lovelace, rizalcss"/>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script defer src="node_modules/rizalcss/js/jquery.min.js"></script>
+  <script defer src="https://kit.fontawesome.com/1e8d61f212.js"></script>
+  <title>Lovelace</title>
+</head>
+<body>
+   
+  <section> 
+  <!--APP BAR-->
+    <div class="secondary-app-bar-container background_color_cinnabar">
+      <div class="secondary-app-bar-content-container">
+        <div class="secondary-app-bar-left-container">
+          <div class="secondary-app-bar-left-content-container">
+            <div class="bar-container" id="showSideBarComponent" data-toggle="tooltip" title="Menu">
+              <div class="bar background_color_white"></div>
+              <div class="bar background_color_white"></div>
+              <div class="bar background_color_white"></div>
+            </div>
+          </div>
+          <div class="app-bar-title color_white">Lovelace</div>
+        </div>
+        <div class="secondary-app-bar-right-container">
+          <div class="secondary-app-bar-right-content-container penultimate" id="showSearchComponent" data-toggle="tooltip" title="Search">
+            <i class="fa-solid fa-search app-bar-icon color_white"></i>
+          </div>
+          <div class="secondary-app-bar-right-content-container" id="showDropdownMenuComponent" data-toggle="tooltip" title="Dropdown">
+            <i class="fa-solid fa-caret-down app-bar-icon color_white"></i>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <section>
+  <!--DROP DOWN MENU-->
+    <div class="primary-drop-down-menu-overlay" id="primaryDropDownMenuOverlay"></div>
+    <div class="primary-drop-down-menu-container background_color_white" id="primaryDropDownMenuContainer">
+      <div class="primary-drop-down-menu-content-container">
+        <p class="primary-drop-down-menu-icon-text color_black">Documentation</p>
+      </div>
+      <div class="primary-drop-down-menu-content-container">
+        <p class="primary-drop-down-menu-icon-text color_black">Blog</p>
+      </div>
+      <div class="primary-drop-down-menu-content-container">
+        <p class="primary-drop-down-menu-icon-text color_black">Contact</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+  <!--FLOATING ACTION BUTTON-->
+    <div class="primary-floating-action-button background_color_cinnabar" id="showBottomSheetDialogComponent">
+      <i class="fa-solid fa-plus primary-floating-action-button-icon color_white"></i>
+    </div>
+  </section>
+
+  <section>
+  <!--BOTTOM NAVIGATION BAR-->
+  </section>
+
+  <section>
+  <!--SEARCH-->
+    <div class="primary-search-overlay" id="primarySearchOverlay"></div>
+    <div class="primary-search-container background_color_white" id="primarySearchContainer">
+      <form class="primary-search-content-container" method="get">
+        <i class="fa-solid fa-arrow-left primary-search-icon color_black" id="hideSearch" data-toggle="tooltip" title="Back"></i>
+        <input class="primary-search-input w_100_pct background_color_white font_size_medium color_black border_none" type="text" placeholder="Search here...">
+        <button class="primary-search-button" type="submit"><i class="fa-solid fa-search primary-search-icon color_black" data-toggle="tooltip" title="Search"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+  <!--BOTTOM SHEET DIALOG-->
+  </section>
+
+  <section>
+  <!--SIDE BAR-->
+    <div class="primary-side-bar-overlay background_color_overlay" id="primarySideBarOverlay"></div>
+    <div class="primary-side-bar-container background_color_white" id="primarySideBarContainer">
+      <div class="primary-side-bar-content-container">
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+  <!--ALERT DIALOG-->
+  </section>
+
+  <section>
+  <!--TOAST-->
+  </section>
+
+  <section>
+  <!--CARD-->
+  </section>
+
+  <section>
+  <!--PRELOADER-->
+    <div class="primary-preloader-overlay" id="primaryPreloaderOverlay">
+      <div class="primary-preloader-container">
+        <div class="primary-preloader-content-container">
+          <div class="primary-preloader">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script defer src="node_modules/rizalcss/js/components.min.js"></script>
+  <script defer src="cordova.js"></script>
+  <script defer src="./src/js/index.js"></script>
+</body>
+</html>
+
+
+
+
+

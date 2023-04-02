@@ -1,0 +1,38 @@
+/* rizalcss | Under MIT License | github.com/allencasul/rizalcss | rizalcss.com */
+
+/*--------- Utilities ---------*/
+@import '../../node_modules/rizalcss/css/utilities/rizal.utilities.min.css';
+
+/*--------- Components ---------*/
+@import '../../node_modules/rizalcss/css/components/preloader.css';
+@import '../../node_modules/rizalcss/css/components/app-bar.css';
+@import '../../node_modules/rizalcss/css/components/side-bar.css';
+@import '../../node_modules/rizalcss/css/components/floating-action-button.css';
+@import '../../node_modules/rizalcss/css/components/bottom-navigation-bar.css';
+@import '../../node_modules/rizalcss/css/components/drop-down-menu.css';
+@import '../../node_modules/rizalcss/css/components/alert-dialog.css';
+@import '../../node_modules/rizalcss/css/components/bottom-sheet-dialog.css';
+@import '../../node_modules/rizalcss/css/components/toast.css';
+@import '../../node_modules/rizalcss/css/components/card.css';
+@import '../../node_modules/rizalcss/css/components/input.css';
+@import '../../node_modules/rizalcss/css/components/checkbox.css';
+@import '../../node_modules/rizalcss/css/components/button.css';
+@import '../../node_modules/rizalcss/css/components/onboarding-screen.css';
+
+/*--------- Mobile ---------*/
+
+@media screen and (max-width: 359px) {
+  /*--------- Unsupported ---------*/
+  * { 
+    display: none; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*--------- Tablet ---------*/
+}
+
+@media screen and (min-width: 1126px) {
+  /*--------- Desktop ---------*/
+}
+        
