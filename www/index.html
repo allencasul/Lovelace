@@ -5,10 +5,10 @@
   <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
   <meta name="color-scheme" content="light dark"/>
   <meta name="theme-color" content="#000000"/>
-  <meta name="description" content="Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Candy Mint CSS Framework for the UI."/>
-  <meta name="keywords" content="Lovelace, Candy Mint CSS Framework, lovelace, candymint"/>
+  <meta name="description" content="Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Lonica CSS Framework for the UI."/>
+  <meta name="keywords" content="Lovelace, Lonica CSS Framework, lovelace, lonica"/>
   <link rel="stylesheet" href="./src/css/style.css">
-  <script defer src="node_modules/candymint/js/jquery.min.js"></script>
+  <script defer src="node_modules/lonica/js/jquery.min.js"></script>
   <script defer src="https://kit.fontawesome.com/1e8d61f212.js"></script>
   <title>Lovelace</title>
 </head>
@@ -16,7 +16,7 @@
    
   <section> 
   <!--APP BAR-->
-    <div class="secondary-app-bar-container background_color_cinnabar">
+    <div class="secondary-app-bar-container background_color_primary">
       <div class="secondary-app-bar-content-container">
         <div class="secondary-app-bar-left-container">
           <div class="secondary-app-bar-left-content-container">
@@ -26,14 +26,14 @@
               <div class="bar background_color_white"></div>
             </div>
           </div>
-          <div class="app-bar-title color_white">Lovelace</div>
+          <div class="app-bar-title color_white">Lovelace + Lonica</div>
         </div>
         <div class="secondary-app-bar-right-container">
           <div class="secondary-app-bar-right-content-container penultimate" id="showSearchComponent" data-toggle="tooltip" title="Search">
             <i class="fa-solid fa-search app-bar-icon color_white"></i>
           </div>
           <div class="secondary-app-bar-right-content-container" id="showDropdownMenuComponent" data-toggle="tooltip" title="Dropdown">
-            <i class="fa-solid fa-caret-down app-bar-icon color_white"></i>
+            <i class="fa-solid fa-ellipsis-v app-bar-icon color_white"></i>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
 
   <section>
   <!--FLOATING ACTION BUTTON-->
-    <div class="primary-floating-action-button background_color_cinnabar" id="showBottomSheetDialogComponent">
+    <div class="primary-floating-action-button background_color_primary" id="showBottomSheetDialogComponent">
       <i class="fa-solid fa-plus primary-floating-action-button-icon color_white"></i>
     </div>
   </section>
@@ -103,6 +103,65 @@
 
   <section>
   <!--CARD-->
+    <div class="tertiary-card-container margin_top_4_rem">
+      <div class="tertiary-card-content-container">
+        <div class="tertiary-card-content background_color_white">
+          <img class="tertiary-card-image" src="https://source.unsplash.com/random" alt="random-image"/>
+          <div class="tertiary-card-title color_black font_size_medium color_black">Best photo of the year</div>
+          <div class="tertiary-card-description color_toast font_size_medium">
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="tertiary-card-content-bottom-container">
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Explore</div>
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Share</div>
+          </div>
+        </div>
+        <div class="tertiary-card-content background_color_white">
+          <img class="tertiary-card-image" src="https://source.unsplash.com/random/people" alt="random-image"/>
+          <div class="tertiary-card-title color_black font_size_medium color_black">Best photo of the year</div>
+          <div class="tertiary-card-description color_toast font_size_medium">
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="tertiary-card-content-bottom-container">
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Explore</div>
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Share</div>
+          </div>
+        </div>
+        <div class="tertiary-card-content background_color_white">
+          <img class="tertiary-card-image" src="https://source.unsplash.com/random/clouds" alt="random-image"/>
+          <div class="tertiary-card-title color_black font_size_medium color_black">Best photo of the year</div>
+          <div class="tertiary-card-description color_toast font_size_medium">
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="tertiary-card-content-bottom-container">
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Explore</div>
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Share</div>
+          </div>
+        </div>
+        <div class="tertiary-card-content background_color_white">
+          <img class="tertiary-card-image" src="https://source.unsplash.com/random/colors" alt="random-image"/>
+          <div class="tertiary-card-title color_black font_size_medium color_black">Best photo of the year</div>
+          <div class="tertiary-card-description color_toast font_size_medium">
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="tertiary-card-content-bottom-container">
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Explore</div>
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Share</div>
+          </div>
+        </div>
+        <div class="tertiary-card-content background_color_white">
+          <img class="tertiary-card-image" src="https://source.unsplash.com/random/woman" alt="random-image"/>
+          <div class="tertiary-card-title color_black font_size_medium color_black">Best photo of the year</div>
+          <div class="tertiary-card-description color_toast font_size_medium">
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="tertiary-card-content-bottom-container">
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Explore</div>
+            <div class="tertiary-card-content-bottom-text font_size_small font_weight_700 color_primary">Share</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -118,13 +177,8 @@
     </div>
   </section>
 
-  <script defer src="node_modules/candymint/js/components.min.js"></script>
+  <script defer src="node_modules/lonica/js/components.min.js"></script>
   <script defer src="cordova.js"></script>
   <script defer src="./src/js/index.js"></script>
 </body>
 </html>
-
-
-
-
-
