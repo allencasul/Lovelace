@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.jrizal.lovelace" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.company.lovelace" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Lovelace</name>
   <description>Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Lonica CSS Framework for the UI.</description>
   <author email="allencasul.dev@gmail.com" href="https://www.github.com/allencasul">Allen Charls Casul</author>
