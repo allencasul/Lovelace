@@ -1,6 +1,6 @@
 {
   "name": "lonica",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight design system framework primarily for building hybrid mobile app user interfaces.",
   "main": "utilities.min.css",
   "repository": {
