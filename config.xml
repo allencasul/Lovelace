@@ -9,7 +9,7 @@
   <allow-intent href="https://*/*" />
 
   <preference name="StatusBarOverlaysWebView" value="false"/>
-  <preference name="StatusBarBackgroundColor" value="#E3F2B1"/>
+  <preference name="StatusBarBackgroundColor" value="#000000"/>
   <preference name="StatusBarStyle" value="lightcontent"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="SplashScreenDelay" value="2500"/>
