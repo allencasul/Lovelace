@@ -20,19 +20,12 @@ STEP# 2: Apache Cordova Framework Installation via NPM
 
 
 
-STEP# 3: Creating a Project
+STEP# 3: Check if cordova requirements successfully installed by running the command below:
 -------------------------------------
-- cordova create Facebook com.facebook.katana Facebook 
+(Run this command inside the "Lovelace Folder/Directory")
 
-  (Replace facebook with your own App Name, 
-  and for the katana that refers to your own system-level codename, 
-  put your own code/company name.)
+- cordova requirements android --verbose 
 
-
-
-STEP# 4: Check if cordova requirements successfully installed by running the command below:
--------------------------------------
-- cordova requirements android --verbose (Run this command inside the Lovelace folder)
 
 (You should be seeing a message something like this)
 
@@ -41,7 +34,24 @@ Android SDK: installed true
 Android target: installed android-33,android-31,android-30,android-29
 Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
 
+(You should be seeing a message something like this)
 
+Java JDK: installed 1.8.0
+Android SDK: installed true
+Android target: installed android-33,android-31,android-30,android-29
+Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
+
+
+
+STEP# 4: Creating a Project
+-------------------------------------
+- cordova create Facebook com.facebook.katana Facebook 
+
+  (Replace facebook with your own App Name, 
+  and for the katana that refers to your own system-level codename, 
+  put your own code/company name.)
+
+
 
 STEP# 5: Adding Platform:
 -------------------------------------
@@ -62,6 +72,7 @@ cordova run, build or emulate
 Plugins:
 -------------------------------------
 cordova plugin add plugin name (Adding a specific plugin)
+
 cordova plugin remove plugin name (Removing a specific plugin)
 
 cordova plugin add cordova-plugin-statusbar
