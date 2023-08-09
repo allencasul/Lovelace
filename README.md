@@ -141,7 +141,7 @@ xxxhdpi	   1280x1920	1920x1280
 ### Allowing http request
 
 ```sh
-Step #1 - add android:networkSecurityConfig="@xml/network_security_config" & android:usesCleartextTraffic="true" inside AndroidManifest.xml file.
+Step 1 - add android:networkSecurityConfig="@xml/network_security_config" & android:usesCleartextTraffic="true" inside AndroidManifest.xml file.
 
 Ex. <application 
 	android:networkSecurityConfig="@xml/network_security_config" 
