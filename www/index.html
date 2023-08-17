@@ -143,7 +143,11 @@
       <div class="primary-preloader-container">
         <div class="primary-preloader-content-container">
           <div class="primary-preloader">
-
+            <script defer>
+              window.addEventListener("load", () => {
+                document.getElementById("primaryPreloaderOverlay").style.display = "none";
+              });
+            </script>
           </div>
         </div>
       </div>
