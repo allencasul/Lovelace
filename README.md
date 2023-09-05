@@ -73,8 +73,8 @@ cordova build ios (For IOS)
 ### Sample Cordova Plugins:
 
 ```sh
-cordova plugin add plugin name (Adding a specific plugin)
-cordova plugin remove plugin name (Removing a specific plugin)
+cordova plugin add PLUGIN_NAME (Adding a specific plugin)
+cordova plugin remove PLUGIN_NAME (Removing a specific plugin)
 
 cordova plugin add cordova-plugin-statusbar
 cordova plugin add cordova-plugin-splashscreen
@@ -93,6 +93,7 @@ cordova plugin add cordova-plugin-media-capture
 cordova plugin add cordova-plugin-screen-orientation
 cordova plugin add cordova-plugin-vibration
 cordova plugin add cordova-plugin-app-exit
+cordova plugin add cordova-plugin-purchase
 ```
 
 ### App Icon Resizer
