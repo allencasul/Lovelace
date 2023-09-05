@@ -58,7 +58,6 @@ cordova create Facebook com.facebook.katana Facebook
 
 ```sh
 cordova platform add android
-cordova platform add ios
 ```
 
 ### Building your app
@@ -66,8 +65,7 @@ cordova platform add ios
 ```sh
 cordova run, build or emulate
 
-cordova build android (For Android)
-cordova build ios (For IOS)
+cordova build android
 ```
 
 ### Sample Cordova Plugins:
