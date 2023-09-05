@@ -1,4 +1,4 @@
-# Lovelace
+# Lovelace | SDK / API level 33 (Android 13 - Tiramisu)
 Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Lonica CSS Framework for the UI. It was named after Ada Lovelace the first computer programmer.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/lonica.appspot.com/o/img%2Fada-lovelace.jpg?alt=media&token=7232e9ed-4557-41b9-9ba6-ab954dc66893" style="max-width:100%;" width="325">
@@ -33,10 +33,10 @@ cordova requirements android --verbose
 
 (You should be seeing a message something like this)
 
-Java JDK: installed 1.8.0
+Java JDK: installed 11.0.20
 Android SDK: installed true
-Android target: installed android-33,android-31,android-30,android-29
-Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
+Android target: installed android-33
+Gradle: installed C:\Gradle\gradle-8.3\bin\gradle.BAT
 
 (You should be seeing a message something like this)
 
@@ -114,7 +114,7 @@ xhdpi	   720x1280	    1280x720
 xxhdpi	   960x1600	    1600x960
 xxxhdpi	   1280x1920	    1920x1280
 
-<!-- Android 12+ -->
+<!-- Android 13 -->
 <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
 <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
 <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
@@ -122,7 +122,7 @@ xxxhdpi	   1280x1920	    1920x1280
 <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
 <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
 
-<!-- Default -->
+<!-- Default | Android 10/11/12 -->
 <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
 <splash src="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
 <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
@@ -130,7 +130,7 @@ xxxhdpi	   1280x1920	    1920x1280
 <splash src="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
 <splash src="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
 
-<!-- Landscape -->
+<!-- Landscape Android 10/11/12 -->
 <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi" />
 <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi" />
 <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi" />
@@ -138,7 +138,7 @@ xxxhdpi	   1280x1920	    1920x1280
 <splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi" />
 <splash src="res/screen/android/splash-land-xxxhdpi.png" density="land-xxxhdpi" />
 
-<!-- Portrait -->
+<!-- Portrait Android 10/11/12 -->
 <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi" />
 <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi" />
 <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi" />
