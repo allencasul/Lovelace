@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.company.lovelace" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Lovelace</name>
-  <description>Lovelace is a compiled assets for building both android and ios hybrid mobile app using Apache Cordova partnered with Lonica CSS Framework for the UI.</description>
+  <description>Lovelace is a compiled assets for building hybrid android mobile app using Apache Cordova partnered with Lonica CSS Framework for the UI.</description>
   <author email="allencasul.dev@gmail.com" href="https://www.github.com/allencasul">Allen Charls Casul</author>
 
   <content src="index.html"/>
@@ -38,14 +38,11 @@
     <icon src="res/images/xxhdpi.png" density="xxhdpi"/>
     <icon src="res/images/xxxhdpi.png" density="xxxhdpi"/>
 
-    <preference src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
-    <preference src="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
-    <preference src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
-    <preference src="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
-    <preference src="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
-    <preference src="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
   </platform>
-
-  <plugin name="cordova-plugin-splashscreen" spec="^6.0.2"/>
-  <plugin name="cordova-plugin-statusbar" spec="^2.4.3"/>
 </widget>
