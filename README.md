@@ -54,10 +54,12 @@ cordova create Facebook com.facebook.katana Facebook
 (Replace facebook with your own App Name, and for the katana that refers to your own system-level codename, put your own code/company name.)
 ```
 
-### STEP 5: Adding Platform
+### STEP 5: Adding/Removing Platform
 
 ```sh
 cordova platform add android
+
+cordova platform remove android
 ```
 
 ### Building your app
@@ -110,7 +112,15 @@ mdpi	   320x480	    480x320
 hdpi	   480x800	    800x480
 xhdpi	   720x1280	    1280x720
 xxhdpi	   960x1600	    1600x960
-xxxhdpi	   1280x1920	1920x1280
+xxxhdpi	   1280x1920	    1920x1280
+
+<!-- Android 12+ -->
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
 
 <!-- Default -->
 <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
