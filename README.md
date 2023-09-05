@@ -11,9 +11,9 @@ Lovelace is a compiled assets for building both android and ios hybrid mobile ap
 -------------------------------------
 1. https://nodejs.org/en/
 2. https://git-scm.com/downloads
-3. https://www.oracle.com/ph/java/technologies/javase/javase8-archive-downloads.html
-4. https://developer.android.com/studio
-5. https://gradle.org/
+3. https://www.oracle.com/ph/java/technologies/javase/javase8-archive-downloads.html | Select Java 8 or 11
+4. https://developer.android.com/studio | Select SDK Build Tools 33.0.2 / API level 33 (Android 13 - Tiramisu)
+5. https://gradle.org/ | Select the latest version
 5. Configure Environment Variables
    Watch the installation process bit.ly/3JX1aXa
 ```
@@ -21,7 +21,7 @@ Lovelace is a compiled assets for building both android and ios hybrid mobile ap
 ### STEP 2: Apache Cordova Framework Installation via NPM
 
 ```sh
-npm install -g cordova
+npm i -g cordova@12.0.0
 ```
 
 ### STEP 3: Check if cordova requirements successfully installed by running the command below:
@@ -50,9 +50,9 @@ cordova create Facebook com.facebook.katana Facebook
 ### STEP 5: Adding/Removing Platform
 
 ```sh
-cordova platform add android
+- cordova platform add android@12.0.1
 
-cordova platform remove android
+- cordova platform remove android@12.0.1
 ```
 
 ### Building your app
