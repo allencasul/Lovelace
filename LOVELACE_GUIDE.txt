@@ -6,9 +6,9 @@ STEP# 1: Make sure to have all of these installed on your machine.
 -------------------------------------
 1. https://nodejs.org/en/
 2. https://git-scm.com/downloads
-3. https://www.oracle.com/ph/java/technologies/javase/javase8-archive-downloads.html
-4. https://developer.android.com/studio
-5. https://gradle.org/
+3. https://www.oracle.com/ph/java/technologies/javase/javase8-archive-downloads.html | Select Java 8 or 11
+4. https://developer.android.com/studio | Select SDK Build Tools 33.0.2 / API level 33 (Android 13 - Tiramisu)
+5. https://gradle.org/ | Select the latest version
 5. Configure Environment Variables
    Watch the installation process bit.ly/3JX1aXa
 
@@ -16,7 +16,7 @@ STEP# 1: Make sure to have all of these installed on your machine.
 
 STEP# 2: Apache Cordova Framework Installation via NPM
 -------------------------------------
-- npm install -g cordova
+- npm i -g cordova@12.0.0
 
 
 
@@ -36,18 +36,18 @@ STEP# 4: Check if cordova requirements successfully installed by running the com
 
 (You should be seeing a message something like this)
 
-Java JDK: installed 1.8.0
+Java JDK: installed 11.0.20
 Android SDK: installed true
-Android target: installed android-33,android-31,android-30,android-29
-Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
+Android target: installed android-33
+Gradle: installed C:\Gradle\gradle-8.3\bin\gradle.BAT
 
 
 
 STEP# 5: Adding/Removing Platform:
 -------------------------------------
-- cordova platform add android
+- cordova platform add android@12.0.1
 
-- cordova platform remove android
+- cordova platform remove android@12.0.1
 
 
 
@@ -101,7 +101,7 @@ mdpi	   320x480	    480x320
 hdpi	   480x800	    800x480
 xhdpi	   720x1280	    1280x720
 xxhdpi	   960x1600	    1600x960
-xxxhdpi	   1280x1920	1920x1280
+xxxhdpi	   1280x1920	    1920x1280
 
 
 <!-- Android 12+ -->
