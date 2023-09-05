@@ -37,13 +37,6 @@ Java JDK: installed 11.0.20
 Android SDK: installed true
 Android target: installed android-33
 Gradle: installed C:\Gradle\gradle-8.3\bin\gradle.BAT
-
-(You should be seeing a message something like this)
-
-Java JDK: installed 1.8.0
-Android SDK: installed true
-Android target: installed android-33,android-31,android-30,android-29
-Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
 ```
 
 ### STEP 4: Creating a Project
