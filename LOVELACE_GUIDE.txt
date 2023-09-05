@@ -20,30 +20,7 @@ STEP# 2: Apache Cordova Framework Installation via NPM
 
 
 
-STEP# 3: Check if cordova requirements successfully installed by running the command below:
--------------------------------------
-(Run this command inside the "Lovelace Folder/Directory")
-
-- cordova requirements android --verbose 
-
-
-(You should be seeing a message something like this)
-
-Java JDK: installed 1.8.0
-Android SDK: installed true
-Android target: installed android-33,android-31,android-30,android-29
-Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
-
-(You should be seeing a message something like this)
-
-Java JDK: installed 1.8.0
-Android SDK: installed true
-Android target: installed android-33,android-31,android-30,android-29
-Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
-
-
-
-STEP# 4: Creating a Project
+STEP# 3: Creating a Project
 -------------------------------------
 - cordova create Facebook com.facebook.katana Facebook 
 
@@ -51,12 +28,26 @@ STEP# 4: Creating a Project
   and for the katana that refers to your own system-level codename, 
   put your own code/company name.)
 
-
 
-STEP# 5: Adding Platform:
+
+STEP# 4: Check if cordova requirements successfully installed by running the command below:
+-------------------------------------
+- cordova requirements android --verbose (Run this command inside the Lovelace folder)
+
+(You should be seeing a message something like this)
+
+Java JDK: installed 1.8.0
+Android SDK: installed true
+Android target: installed android-33,android-31,android-30,android-29
+Gradle: installed C:\gradle-7.5.1\bin\gradle.BAT
+
+
+
+STEP# 5: Adding/Removing Platform:
 -------------------------------------
 - cordova platform add android
-- cordova platform add ios
+
+- cordova platform remove android
 
 
 
@@ -64,16 +55,14 @@ STEP# 6: Building your app
 -------------------------------------
 cordova run, build or emulate
 
-- cordova build android (For Android)
-- cordova build ios (For IOS)
+- cordova build android
 
 
 
 Plugins:
 -------------------------------------
-cordova plugin add plugin name (Adding a specific plugin)
-
-cordova plugin remove plugin name (Removing a specific plugin)
+cordova plugin add PLUGIN_NAME (Adding a specific plugin)
+cordova plugin remove PLUGIN_NAME (Removing a specific plugin)
 
 cordova plugin add cordova-plugin-statusbar
 cordova plugin add cordova-plugin-splashscreen
@@ -82,7 +71,17 @@ cordova plugin add cordova-plugin-dialogs
 cordova plugin add cordova-plugin-inappbrowser
 cordova plugin add cordova-plugin-network-information
 cordova plugin add cordova-plugin-x-socialsharing
-
+cordova plugin add cordova-plugin-battery-status
+cordova plugin add cordova-plugin-camera
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-geolocation
+cordova plugin add cordova-plugin-media
+cordova plugin add cordova-plugin-media-capture
+cordova plugin add cordova-plugin-screen-orientation
+cordova plugin add cordova-plugin-vibration
+cordova plugin add cordova-plugin-app-exit
+cordova plugin add cordova-plugin-purchase
 
 
 App Icon Resizer
@@ -104,6 +103,14 @@ xhdpi	   720x1280	    1280x720
 xxhdpi	   960x1600	    1600x960
 xxxhdpi	   1280x1920	1920x1280
 
+
+<!-- Android 12+ -->
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxhdpi.png" density="xxhdpi"/>
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-port-xxxhdpi.png" density="xxhdpi"/>
 
 
 <!-- Default -->
